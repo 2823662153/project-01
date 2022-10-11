@@ -1,0 +1,316 @@
+// 导入commmon文件
+@import "common";
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    box-sizing: border-box;
+    }
+ul{
+    list-style: none;
+    border: 0;
+}
+body{
+    height: 1000px;
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background-color: #f2f2f2;
+}
+// <!-- 顶部搜索框 -->
+@basefont:50;
+.search-content{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: (88rem / @basefont);
+    width: 15rem;
+    background-color: #FFDB47;
+    .classify{
+        width: (44rem / @basefont);
+        height: (70rem / @basefont);
+        margin: (11rem / @basefont) (25rem / @basefont) (7rem / @basefont) (24rem /@basefont);
+        background:url(../images/one.png) no-repeat;
+        background-size: (44rem / @basefont) (70rem / @basefont);
+    }
+    .search{
+        flex: 1;
+        input{
+            width: 100%;
+            height: (60rem / @basefont);
+            border: 0;
+            border-radius: (33rem / @basefont);
+            outline: none;
+            margin-top: (12rem /@basefont);
+            font-size: (25rem / @basefont);
+            padding-left: (55rem / @basefont);
+            color: #757575;
+        }
+    }
+    .login{
+        width: (75rem / @basefont);
+        height: (70rem / @basefont);
+        line-height: (70rem / @basefont) ;
+        margin: (10rem / @basefont);
+        font-size: (25rem / @basefont);
+        text-align: center;
+        color: #fff;
+    }
+}
+.banner{
+    width: (750rem / @basefont);
+    height: (368rem / @basefont);
+    
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+nav{
+    width: (750rem / @basefont);
+    display: flex;
+    flex-wrap: wrap;
+   
+    a{
+        flex:20%;
+        width: (150rem / @basefont);
+        height: (140rem / @basefont);
+        text-align: center;
+        
+        .entering{
+             img{
+            display:block;
+            width: (82rem / @basefont);
+            height: (82rem / @basefont);
+            margin: (10rem / @basefont) auto 0;
+        }
+        }
+        .span{
+            font-size: (25rem /@basefont); 
+            color: #333;
+         }
+    
+       
+       
+    }
+}
+
+.shoping-area{
+    display: flex;
+    width: (702rem / @basefont);
+    height: (258rem / @basefont);
+    margin: (45rem / @basefont) auto 0;
+    background-color: rgb(255,255,255);
+    border-radius: 0.3rem  0.3rem 0rem 0rem;
+    overflow: hidden;
+
+    .shoping-area-box{
+    width: (350rem / @basefont);
+    height: (258rem / @basefont);
+    padding-left: (20rem / @basefont);
+    border-right: 1px solid rgb(250,250,250);
+    
+    .title-miaosha{
+        display: block;
+        font-size: (28rem / @basefont);
+        font-weight: 700;
+        max-width: (175rem / @basefont);
+        height: (40rem /@basefont);
+    }
+    p{
+        width: (300rem / @basefont);
+        height: (30rem / @basefont);
+        line-height: (30rem / @basefont);
+        color: #999;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top:(4rem / @basefont);
+        font-size: (24rem / @basefont);
+    }
+
+    .shoping-area-box-miaosha{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        width: (350rem / @basefont);
+        li{
+        flex: 50%;
+        width: (120rem / @basefont);
+        margin-right: (15rem / @basefont);
+        img{
+            width:(120rem / @basefont);
+            height: (120rem / @basefont);
+        }
+        span{
+            display: block;
+            height: (22rem / @basefont);
+            line-height: (22rem / @basefont);
+            color: #f50;
+            font-size: (22rem / @basefont);
+            padding-left: (30rem / @basefont);
+        }
+        }
+    
+    }
+
+    }
+}
+.shoping-area-center{
+    display: flex;
+    width: (702rem / @basefont);
+    height: (258rem / @basefont);
+    margin:0 auto;
+    background-color: rgb(255,255,255);
+    overflow: hidden;
+
+    .shoping-area-box{
+    width: (350rem / @basefont);
+    height: (258rem / @basefont);
+    padding-left: (20rem / @basefont);
+    border-right: 1px solid rgb(250,250,250);
+    
+    .title-miaosha{
+        display: block;
+        font-size: (28rem / @basefont);
+        font-weight: 700;
+        max-width: (175rem / @basefont);
+        height: (40rem /@basefont);
+    }
+    p{
+        width: (300rem / @basefont);
+        height: (30rem / @basefont);
+        line-height: (30rem / @basefont);
+        color: #999;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top:(4rem / @basefont);
+        font-size: (24rem / @basefont);
+    }
+
+    .shoping-area-box-miaosha{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        width: (350rem / @basefont);
+        li{
+        flex: 50%;
+        width: (120rem / @basefont);
+        margin-right: (15rem / @basefont);
+        img{
+            width:(120rem / @basefont);
+            height: (120rem / @basefont);
+        }
+        span{
+            display: block;
+            height: (22rem / @basefont);
+            line-height: (22rem / @basefont);
+            color: #f50;
+            font-size: (22rem / @basefont);
+            padding-left: (30rem / @basefont);
+        }
+        }
+    
+    }
+
+    }
+}
+
+.tuijian{
+    display: flex;
+    width:(702rem / @basefont);
+    height: (172rem / @basefont);
+    margin: 0 auto;
+    border-radius: 0rem 0rem  0.3rem  0.3rem;
+    background-color:#fff;
+    overflow: hidden;
+
+    .tuijian-jp{
+        width: (173rem / @basefont);
+        height: (172rem / @basefont);
+        padding:(40rem / @basefont) (20rem / @basefont) 0 (20rem / @basefont) ;
+       
+
+        p{
+            width:(137.5rem / @basefont);
+            height: (45rem / @basefont);
+            line-height: (45rem / @basefont);
+            font-size:(32rem / @basefont);
+            color: #444;
+            font-weight: bold;
+        }
+        span{
+            display: block;
+            width: (137rem / @basefont);
+            height: (32rem / @basefont);
+            line-height: (32rem / @basefont);
+            font-size:(24rem / @basefont);
+            color: #999;
+
+        }
+
+    }
+    .tuijian-shoping{
+        display: flex;
+        justify-content:space-between;
+        width: (577rem / @basefont);
+        height: (172rem / @basefont);
+
+        a{
+            width: (120rem / @basefont);
+            height: (172rem / @basefont);
+
+
+        img{
+          width: 100%;
+           height: (100rem / @basefont);
+        }
+        p{
+            width:(120rem / @basefont) ;
+            height: (30rem / @basefont);
+           line-height: (30rem / @basefont);
+           font-size: (22rem / @basefont);
+           text-align: center;
+           color: #333;
+        }
+        }
+
+    }
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width:(750rem / @basefont) ;
+    height: (100rem / @basefont);
+    background-color: rgb(247, 249, 247);
+    text-align: center;
+    line-height:  (80rem / @basefont);
+    a{
+     flex: 20%;
+     &:hover p{
+         font-weight: 600;
+     }
+
+    img{
+         width: (48rem / @basefont);
+         height:  (48rem / @basefont);
+     }
+     p{
+         position: absolute;
+         transition: all 0.2s;
+         top: (35rem / @basefont);
+         width: (160rem / @basefont);
+         height: (27rem / @basefont);
+         font-size: (20rem / @basefont);
+         color: #000000;
+     }
+    }
+}
